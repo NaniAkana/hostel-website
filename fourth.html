@@ -1,0 +1,3657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="single.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #mainContent {
+            display: none;
+        }
+
+        #loadingSpinner {
+            display: block;
+            text-align: center;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loadingSpinner">
+        <img src="images/loading.gif" alt="" style="margin-top: 100px;width: 500px;">
+    </div>
+    <div id="mainContent">
+    <script>
+        window.addEventListener("scroll", function () {
+            header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+
+        })
+        window.onload = function () {
+            showDiv(4);
+        };
+        function showDiv(divNumber) {
+            // Hide all divs
+            const allDivs = document.querySelectorAll('.citiesall');
+            allDivs.forEach(div => {
+                div.style.display = 'none';
+            });
+
+            // Show the selected div
+            const selectedDiv = document.getElementById('div' + divNumber);
+            selectedDiv.style.display = 'block';
+        }
+
+    </script>
+    <script>
+         function appendDisplay(roomNumber) {
+            // Hide all room sets
+            document.querySelectorAll('.rooms').forEach(function(roomSet) {
+                roomSet.style.display = 'none';
+            });
+
+            // Show the selected room set
+            document.getElementById('rooms' + roomNumber).style.display = 'block';
+        }
+    </script>
+ <script>
+    window.onload = function () {
+         showDiv(4);
+         appendDisplay(4);
+     };
+      function appendDisplay(roomNumber) {
+         // Hide all room sets
+         document.querySelectorAll('.rooms').forEach(function(roomSet) {
+             roomSet.style.display = 'none';
+         });
+
+         // Show the selected room set
+         document.getElementById('rooms' + roomNumber).style.display = 'block';
+     }
+ </script>
+
+
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hostels
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="single.html" style="color: black;">SINGLE BEDROOM</a>
+                                </li>
+                                <li><a class="dropdown-item" href="second.html" style="color: black;">2 IN 1 BEDROOM</a>
+                                </li>
+                                <li><a class="dropdown-item" href="third.html" style="color: black;">4 IN 1 BEDROOM</a>
+                                </li>
+                                <li><a class="dropdown-item" href="fourth.html" style="color: black;">6 IN 1 BEDROOM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid" id="background"> </div>
+    <div class="col" id="cities">
+
+        <div class="section button">
+            <ul>
+                <li><button class="button" onclick="showDiv(1)" id="button1">Single</button></li>|
+                <li><button class="button" onclick="showDiv(2)" id="button2">2Share</button></li>|
+                <li><button class="button" onclick="showDiv(3)" id="button3">4Share</button></li>|
+                <li><button class="button" onclick="showDiv(4)" id="button4">6Share</button>
+                <li>
+            </ul>
+        </div>
+        <div class="citiesall nn" id="div1">
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(1)">
+                <h1>AMEERPET</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(2)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(2)">
+                <h1>HITECH CITY</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(1)">See Avaliability</a>
+            </div>
+           
+            <div class="container-fluid button" id="one" onclick="appendDisplay(3)">
+                <h1>MADHAPUR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(3)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(4)">
+                <h1>GACHIBOWLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(4)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(5)">
+                <h1>JUBILEE HILLS</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(5)">See Avaliability</a>
+
+            </div>
+
+            <div class="container-fluid button" id="one" onclick="appendDisplay(6)">
+                <h1>SR NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(6)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(7)">
+                <h1>KUKATAPALLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(7)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(8)">
+                <h1>PANJAGUTTA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(8)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(9)">
+                <h1>ESI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(9)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(10)">
+                <h1>ERRAGADDA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(10)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(11)">
+                <h1>BHARATH NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(11)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(12)">
+                <h1>KPHB</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(12)">See Avaliability</a>
+
+            </div>
+
+        </div>
+        <div class="citiesall nn" id="div2">
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(1)">
+                <h1>HITECH CITY</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(1)">See Avaliability</a>
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(2)">
+                <h1>AMEERPET</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(2)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(3)">
+                <h1>MADHAPUR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(3)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(4)">
+                <h1>GACHIBOWLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(4)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(5)">
+                <h1>JUBILEE HILLS</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(5)">See Avaliability</a>
+
+            </div>
+
+            <div class="container-fluid button" id="one" onclick="appendDisplay(6)">
+                <h1>SR NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(6)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(7)">
+                <h1>KUKATAPALLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(7)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(8)">
+                <h1>PANJAGUTTA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(8)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(9)">
+                <h1>ESI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(9)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(10)">
+                <h1>ERRAGADDA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(10)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(11)">
+                <h1>BHARATH NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(11)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(12)">
+                <h1>KPHB</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(12)">See Avaliability</a>
+
+            </div>
+
+        </div>
+        <div class="citiesall nn" id="div3">
+            <div class="container-fluid button" id="one" onclick="appendDisplay(4)">
+                <h1>GACHIBOWLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(4)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(1)">
+                <h1>HITECH CITY</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(1)">See Avaliability</a>
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(2)">
+                <h1>AMEERPET</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(2)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(3)">
+                <h1>MADHAPUR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(3)">See Avaliability</a>
+
+            </div>
+           
+            <div class="container-fluid button" id="one" onclick="appendDisplay(5)">
+                <h1>JUBILEE HILLS</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(5)">See Avaliability</a>
+
+            </div>
+
+            <div class="container-fluid button" id="one" onclick="appendDisplay(6)">
+                <h1>SR NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(6)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(7)">
+                <h1>KUKATAPALLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(7)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(8)">
+                <h1>PANJAGUTTA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(8)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(9)">
+                <h1>ESI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(9)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(10)">
+                <h1>ERRAGADDA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(10)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(11)">
+                <h1>BHARATH NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(11)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(12)">
+                <h1>KPHB</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(12)">See Avaliability</a>
+
+            </div>
+
+        </div>
+        <div class="citiesall nn" id="div4">
+            <div class="container-fluid button" id="one" onclick="appendDisplay(1)">
+                <h1>MADHAPUR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(3)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(2)">
+                <h1>HITECH CITY</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(1)">See Avaliability</a>
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(3)">
+                <h1>AMEERPET</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(2)">See Avaliability</a>
+
+            </div>
+            
+            <div class="container-fluid button" id="one" onclick="appendDisplay(4)">
+                <h1>GACHIBOWLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(4)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(5)">
+                <h1>JUBILEE HILLS</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(5)">See Avaliability</a>
+
+            </div>
+
+            <div class="container-fluid button" id="one" onclick="appendDisplay(6)">
+                <h1>SR NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(6)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(7)">
+                <h1>KUKATAPALLI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(7)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(8)">
+                <h1>PANJAGUTTA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(8)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one"  onclick="appendDisplay(9)">
+                <h1>ESI</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(9)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(10)">
+                <h1>ERRAGADDA</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(10)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(11)">
+                <h1>BHARATH NAGAR</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(11)">See Avaliability</a>
+
+            </div>
+            <div class="container-fluid button" id="one" onclick="appendDisplay(12)">
+                <h1>KPHB</h1>
+                <i id="cilentc"><span class="fa fa-star checked" ></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star-half-full checked"></span></i>
+                <a href="#" class="button" onclick="appendDisplay(12)">See Avaliability</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+  <div class="roo">
+    <div class="col rooms" id="rooms1">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms2">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>nani Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms3">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms4">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam5 Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms5">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam3 Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms6">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam2 Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms7">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam1 Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms8">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam 7Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms9">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam jHostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms10">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam 10 Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms11">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam11 Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+    <div class="col rooms" id="rooms12">
+
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>shyam12 Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    
+      <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="">
+            <h1>Manoj Hostel</h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+        <div class="container-fluid" id="two">
+            <img src="images/back.jpg" alt="" width="200px" height="180px">
+            <h1>Manoj Hostel </h1>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ab natus possimus dicta ipsa
+                dolorem, eveniet impedit dignissimos est ad magni itaque modi reprehenderit voluptatem dolorum sequi
+                omnis aut. At?</p>
+            <button>Book Now</button>
+
+        </div>
+
+
+
+    </div>
+
+    
+    
+</div>
+</div>
+<script>
+   
+    window.addEventListener('load', function () {
+
+        setTimeout(function () {
+            document.getElementById('loadingSpinner').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }, 2000);
+    });
+</script>
+
+
+</body>
+
+</html>

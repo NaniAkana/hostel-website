@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        #mainContent {
+            display: none;
+        }
+
+        #loadingSpinner {
+            display: block;
+            text-align: center;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loadingSpinner">
+
+        <img src="images/loading.gif" alt="" style="margin-top: 100px;width: 500px;">
+
+    </div>
+    <div id="mainContent">
+        <header class="col">
+
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Hostels
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="single.html">Single Bedroom</a></li>
+                                    <li><a class="dropdown-item" href="second.html">2Share Bedroom</a></li>
+                                    <li><a class="dropdown-item" href="third.html">4Share Bedroom</a></li>
+                                    <li><a class="dropdown-item" href="fourth.html">6Share Bedroom</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/back1.jpg" alt="" class="d-block" width="100%" height="750px" id="slide">
+                    <img src="images/bed-removebg-preview.png" class="d-block" alt="..." id="first">
+
+                    <div class="fadeInLeft" id="first-matter">
+
+                        <h5>Affordable and Comformable</h5>
+                        <h1>HOSTEL ROOMS</h1>
+                        <a href="single.html"><button>See Avaliability</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/back1.jpg" alt="" class="d-block" width="100%" height="750px" id="slide">
+                    <img src="images/hotel-removebg.png" class="d-block " alt="..." id="second">
+
+
+                    <div class="fadeInLeft" id="first-matter">
+
+                        <h5>Affordable and Comformable</h5>
+                        <h1>HOTEL ROOMS</h1>
+                        <button>Enquire Now</button>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img src="images/back1.jpg" alt="" width="100%" class="d-block" height="750px" id="slide">
+                    <img src="images/l-removebg-preview-removebg-preview.png" class="d-block " alt="..." id="three">
+
+                    <div class="fadeInLeft" id="first-matter">
+
+                        <h5>Affordable and Comformable</h5>
+                        <h1>LOGDE ROOMS</h1>
+                        <button>Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev" data-bs-target="#carouselExampleInterval">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next" data-bs-target="#carouselExampleInterval">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container-fluid" id="hotel">
+            <div class="img contentWrapper">
+                <img src="images/going_to_hotel.gif" alt="" id="gift" class="mainContent">
+            </div>
+            <div class="about contentWrapper">
+                <div class="mainContent">
+
+
+                    <h1>ABOUT</h1>
+                    <p>We, Venus Hostel, located in HYDERABAD offer a pocket friendly stay to each patron and welcome
+                        them
+                        with
+                        complete warmth and hospitality. We offer an army of all essential services that are rendered by
+                        the
+                        hostel for a hassle free stay at no extra costs. For accommodation, the property offers
+                        spacious,
+                        airy
+                        and well-lit rooms, featuring sophisticated and welcoming ambience with the warmth and comfort
+                        of
+                        home.
+                        We take utmost care of the safety and security of individuals and their belongings staying in
+                        our
+                        hostel
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid" id="rooms">
+            <h1 id="roo">HOSTEL ROOMS</h1>
+            <div class="container overflow-hidden text-center">
+                <div class="row gx-5">
+                    <div class="col contentWrapper">
+                        <div class="card" style="width: 18rem;" id="single" class="mainContent">
+                            <img src="images/single.webp" class="card-img-top" alt="..." height="250px">
+                            <div class="card-body">
+                                <h5 class="card-title">SINGLE BEDROOM</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="single.html" class="btn btn-primary">See Avaliability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col contentWrapper">
+                        <div class="card" style="width: 18rem;" id="single" class="mainContent">
+                            <img src="images/back.jpg" class="card-img-top" alt="..." height="250px">
+                            <div class="card-body">
+                                <h5 class="card-title">2SHARE BEDROOM</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="second.html" class="btn btn-primary">See Avaliability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col contentWrapper">
+                        <div class="card" style="width: 18rem;" id="single" class="mainContent">
+                            <img src="images/4in1.JPG" class="card-img-top" alt="..." height="250px">
+                            <div class="card-body">
+                                <h5 class="card-title">4SHARE BEDROOM</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="third.html" class="btn btn-primary">See Avaliability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col contentWrapper">
+                        <div class="card" style="width: 18rem;" id="single" class="mainContent">
+                            <img src="images/6in1.jpg" class="card-img-top" alt="..." height="250px">
+                            <div class="card-body">
+                                <h5 class="card-title">6SHARE BEDROOM</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <a href="fourth.html" class="btn btn-primary">See Avaliability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid" id="background"> </div>
+        <div class="co" id="clients">
+            <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true" style="width: 100%;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/cilent.jpeg" class="d-block " alt="..." width="100%" height="500px">
+                        <img src="images/WhatsApp Image 2022-07-03 at 5.20.50 PM.jpeg" alt="" id="cilenta">
+                        <p class="carousel d-none d-md-block" id="cilentb">In This platform Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Fugit aspernatur dolorem </p>
+
+                        <i id="cilentc"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span></i>
+                        <img src="images/double-removebg-preview.png" alt="" id="cilentd">
+                        <img src="images/double1-removebg-preview.png" alt="" id="cilente">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/cilent.jpeg" class="d-block " alt="..." width="100%" height="500px">
+                        <img src="images/vinay.jpeg" alt="" id="cilenta">
+                        <p class="carousel d-none d-md-block" id="cilentb">In This platform Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Fugit aspernatur dolorem </p>
+
+                        <i id="cilentc"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span></i>
+                        <img src="images/double-removebg-preview.png" alt="" id="cilentd">
+                        <img src="images/double1-removebg-preview.png" alt="" id="cilente">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/cilent.jpeg" class="d-block " alt="..." width="100%" height="500px">
+                        <img src="images/shyam.jpeg" alt="" id="cilenta">
+                        <p class="carousel d-none d-md-block" id="cilentb">In This platform Lorem, ipsum dolor sit amet
+                            consectetur adipisicing elit. Fugit aspernatur dolorem </p>
+
+                        <i id="cilentc"><span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half-full checked"></span>
+                            <span class="fa fa-star"></span></i>
+                        <img src="images/double-removebg-preview.png" alt="" id="cilentd">
+                        <img src="images/double1-removebg-preview.png" alt="" id="cilente">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="containe" id="footer">
+            <div class="footer">
+                <h1>Sign Up Our Newsletter</h1>
+                <p>We Offer An Informative Monthly Technology Newsletter - Check It Out.</p>
+                <div class="searchh">
+                    <input type="email" placeholder="Enter Your Email..." class="container">
+                    <a href="">
+                        <button>Subscribe Now</button>
+                    </a>
+                </div>
+
+            </div>
+            <div style="width: 100%;height: 1px;"></div>
+            <div class="footer2">
+                <h1>Hostel</h1>
+                <p>Unlocking Success Together. Explore the key <br>attributes and considerations to identify<br> your
+                    ideal
+                    web
+                    development collaborator <br>in this concise presentation.</p>
+                <div class="icon">
+                    <ul>
+                        <li><a href="" class="fa fa-instagram"></a></li>
+                        <li><a href="" class="fa fa-twitter"></a></li>
+                        <li><a href="" class="fa fa-facebook"></a></li>
+                        <li><a href="" class="fa fa-linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="our">
+                    <h1>Our services</h1>
+                    <ul>
+                        <li><a href="single.html"><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>Hostels</a></li>
+                        <li><a href=""><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>Lodge</a></li>
+                        <li><a href=""><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>Hotel</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="quick">
+                    <h1>Quick Links</h1>
+                    <ul>
+                        <li><a href="lev.html"><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>Home</a></li>
+                        <li><a href="about.html"><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>About</a></li>
+                        <li><a href="single.html"><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>Hostels</a></li>
+                        <li><a href="why.html"><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>Features</a></li>
+                        <li><a href="contact.html"><i class="fa fa-angle-right">&nbsp;&nbsp;&nbsp;</i>Contact us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="add">
+                    <h1>Our Branches</h1>
+                    <h2>Hyderbad:</h2>
+                    <p>Office #411, 4th Floor, Manjeera<br> Majestic Commercial, Kukatpally <br>Housing Board Colony,
+                        Kukatpally,<br>
+                        Hyderabad, Telangana 500072.</p>
+                    <div class="abb">
+                        <h2>Rajahmundry:</h2>
+                        <p>
+                            Office #3rd floor, Yuvaraj souda, 77<br>-8-4, RTC Complex road ThadiThota,<br>
+                            Rajamahendravaram,
+                            Andhra Pradesh <br>533101.</p>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="script.js">   </script>
+
+    <script>
+        // Wait for the page to load
+        window.addEventListener('load', function () {
+            // Set a timeout to show the div after 2 seconds
+            setTimeout(function () {
+                document.getElementById('loadingSpinner').style.display = 'none'; // Hide the loading spinner
+                document.getElementById('mainContent').style.display = 'block'; // Show the div
+            }, 2000);
+        });
+    </script>
+    <script>
+        // Intersection Observer configuration
+        const options = {
+            threshold: 0.5, // Trigger when 50% of the element is visible
+        };
+
+        // Callback function to handle intersection changes
+        const handleIntersection = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fadeIn'); // Add the fadeIn class when element is visible
+                } else {
+                    entry.target.classList.remove('fadeIn'); // Remove the fadeIn class when element is not visible
+                }
+            });
+        };
+
+        // Create an Intersection Observer
+        const observer = new IntersectionObserver(handleIntersection, options);
+
+        // Target the elements you want to observe
+        const targetElements = document.querySelectorAll('.contentWrapper');
+        targetElements.forEach(targetElement => {
+            observer.observe(targetElement);
+        });
+    </script>
+
+
+
+</body>
+
+</html>

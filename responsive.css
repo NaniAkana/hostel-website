@@ -1,0 +1,1057 @@
+
+@media (min-width:0px) and (max-width:380px) {
+    .navbar{
+        height: 12vh;
+        width: 100%;
+        z-index: 1;
+        
+        
+    }
+    .header{
+        height: 12vh;
+        width: 100%;
+        z-index: 1;
+        
+        
+       
+        
+    }
+    .navbar-nav{
+        margin-left: 1rem;
+        background-color: rgb(14, 174, 243);
+    }
+    #background{
+        width: 100%;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #first-matter{
+        position: absolute;
+        top: 200px;
+        left: 25px;
+       
+        width: 300px;
+        font-size: medium;
+
+    }
+    #first-matter button{
+        position: absolute;
+        top: 100px;
+        left: -130px;
+        width: 150px;
+    }
+    #first-matter h1{
+        font-size: xx-large;
+        position: absolute;
+        top: 20px;
+        left: -70px;
+        width: 300px;
+       
+        
+    }
+    #first-matter h5{
+        font-size: x-large;
+        width: 500px;
+    }
+    #second-matter{
+        position: absolute;
+        top: 50px;
+        left: -55px;
+       
+        width: 100px;
+        font-size: medium;
+
+    }
+    #second-matter button{
+        position: absolute;
+        top: 150px;
+        left: -130px;
+        width: 150px;
+    }
+    #second-matter h5{
+        font-size: x-large;
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        width: 300px;
+       
+        
+    }
+    #second-matter h1{
+        font-size: x-large;
+        width: 500px;
+    }
+    
+    #first{
+        position: absolute;
+        left: -50px;
+        top: 400px;
+      
+        width: 500px;
+        height: 400px;
+    }
+    #second{
+        position: absolute;
+        left: -30px;
+        top: 400px;
+      
+        width: 400px;
+        height: 400px;
+    }
+    #three{
+        position: absolute;
+        left: -30px;
+        top: 400px;
+      
+        width: 400px;
+        height: 400px;
+    }
+    #hotel{
+        height: auto;
+    }
+    #rooms{
+        width: 100%;
+       height: auto;
+        
+    }
+    .card{
+        margin-left: 20px;
+        
+    }
+    #single{
+        height: auto;
+    }
+    #clients{
+        width: 100%;
+    }
+    #gift{
+        width: 260px;
+        height: 250px;
+        position: relative;
+        left: -50px;
+        top: -80px;
+    }
+    .about{
+        width: 300px;
+        position: relative;
+        top: 0;
+        left: 20px;
+       
+    }
+    #roo{
+        padding-top: 50px;
+    }
+    header.sticky{
+        width: 100%;
+        
+    }
+    #hotel{
+        display: block;
+        width: 100%;
+    }
+   #slide{
+    
+   
+   }
+   #footer{
+    width: 100%;
+   
+    
+   }
+   .footer{
+    display: block;
+    height:auto;
+    width: 100%;
+   }
+   .footer2{
+    height: 200vh;
+    width: 100%;
+
+   }
+   .footer h1{
+    position: relative;
+    left: -80px;
+    top: 20px;
+    width: 200px;
+    height: 100px;
+
+   }
+   .footer p{
+    position: relative;
+    top: 0px;
+    left: -50px;
+   }
+   .searchh{
+    position: relative;
+    left: 10px;
+    width: 300px;
+   }
+   .searchh a button{
+    width: 100px;
+    height: 50px;
+   }
+   .icon{
+    position: relative;
+    top: 50px;
+   }
+   .our{
+    position: relative;
+    left: -150px;
+    height: auto;
+    
+   }
+   
+   .quick{
+    position: relative;
+    left: -50px;
+   }
+   .add{
+    position: relative;
+    left: -50px;
+    top: 50px;
+   }
+
+
+   .contact{
+    width: 100%;
+   }
+
+   .title{
+    text-align: center;
+   }
+   .title h2{
+    position: relative;
+    left: 550px;
+    font-size: 40px;
+
+   }
+   .title{
+    position: relative;
+    top: 150px;
+  
+    text-align: center;
+   
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.title h2{
+    position: absolute;
+    transform: translate(-50%);
+    font-size: 40px;
+    left: 230px;
+}
+
+.title h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px orange;
+}
+
+.title h2:nth-child(2){
+    color: orange;
+    animation: animate 3s ease-in-out infinite;
+}
+
+
+   table{
+    position: relative;
+    left: 20px;
+    display: block;
+   }
+input{
+    width: 300px;
+}
+.btt{
+    position: relative;
+    left: 50px;
+
+}
+.int{
+    position: absolute;
+    left: -70px;
+    top: 200px;
+    width: 300px;
+}
+.third input{
+    width: 300px;
+
+}
+textarea{
+    position: relative;
+    top: 200px;
+    width: 300px;
+
+}
+#rooo{
+    position: relative;
+    top: 900px;
+    left: 0;
+    width: 100%;
+}
+#two{
+    width: 50%;
+   
+    height: auto;
+}
+.rooms{
+    width: 100%;
+}
+#two button{
+    display: none;
+}
+#two p{
+    display: none;
+}
+#two h1{
+    width: 100px;
+}
+}
+
+
+@media (min-width:381px) and (max-width:900px) {
+    .navbar{
+        height: 12vh;
+        width: 100%;
+        z-index: 1;
+        
+        
+    }
+    .header{
+        height: 12vh;
+        width: 100%;
+        z-index: 1;
+        
+        
+       
+        
+    }
+    .navbar-nav{
+        margin-left: 1rem;
+        background-color: rgb(14, 174, 243);
+    }
+    #background{
+        width: 100%;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #first-matter{
+        position: absolute;
+        top: 200px;
+        left: 25px;
+       
+        width: 300px;
+        font-size: medium;
+
+    }
+    #first-matter button{
+        position: absolute;
+        top: 100px;
+        left: -150px;
+        width: 200px;
+    }
+    #first-matter h1{
+        font-size: xx-large;
+        position: absolute;
+        top: 20px;
+        left: -70px;
+        width: 300px;
+       
+        
+    }
+    #first-matter h5{
+        font-size: x-large;
+        width: 500px;
+    }
+    #second-matter{
+        position: absolute;
+        top: 50px;
+        left: -55px;
+       
+        width: 100px;
+        font-size: medium;
+
+    }
+    #second-matter button{
+        position: absolute;
+        top: 150px;
+        left: -130px;
+        width: 150px;
+    }
+    #second-matter h5{
+        font-size: x-large;
+        position: absolute;
+        top: 50px;
+        left: 200px;
+        width: 300px;
+       
+        
+    }
+    #second-matter h1{
+        font-size: x-large;
+        width: 500px;
+    }
+    
+    #first{
+        position: absolute;
+        left: -50px;
+        top: 400px;
+      
+        width: 500px;
+        height: 400px;
+    }
+    #second{
+        position: absolute;
+        left: -30px;
+        top: 400px;
+      
+        width: 400px;
+        height: 400px;
+    }
+    #three{
+        position: absolute;
+        left: -30px;
+        top: 400px;
+      
+        width: 400px;
+        height: 400px;
+    }
+    #hotel{
+        height: auto;
+    }
+    #rooms{
+        width: 100%;
+       height: auto;
+        
+    }
+    .card{
+        margin-left: 30px;
+        
+    }
+    #single{
+        height: 450px;
+    }
+    #clients{
+        width: 100%;
+    }
+    #gift{
+        width: 260px;
+        height: 250px;
+        position: relative;
+        left: -50px;
+        top: -80px;
+    }
+    .about{
+        width: 350px;
+        position: relative;
+        top: 0;
+        left: 20px;
+       
+    }
+    header.sticky{
+        width: 100%;
+        
+    }
+    #hotel{
+        display: block;
+    }
+   #slide{
+    
+   
+   }
+   #footer{
+    width: 100%;
+   
+    
+   }
+   .footer{
+    display: block;
+    height:40vh;
+    width: 100%;
+   }
+   .footer2{
+    height: 140vh;
+    width: 100%;
+
+   }
+   .footer h1{
+    position: relative;
+    left: -80px;
+    top: 20px;
+    width: 300px;
+
+   }
+   .footer p{
+    position: relative;
+    top: 0px;
+    left: -50px;
+   }
+   .searchh{
+    position: relative;
+    left: 10px;
+    width: 300px;
+   }
+   .searchh a button{
+    width: 100px;
+    height: 50px;
+   }
+   .icon{
+    position: relative;
+    top: 50px;
+   }
+   .our{
+    position: relative;
+    left: -150px;
+    height: 25vh;
+    
+   }
+   
+   .quick{
+    position: relative;
+    left: -50px;
+   }
+   .add{
+    position: relative;
+    left: -50px;
+    top: 50px;
+   }
+
+
+   .contact{
+    width: 100%;
+   }
+   .title{
+    text-align: center;
+   }
+   .title h2{
+    position: relative;
+    left: 550px;
+    font-size: 40px;
+
+   }
+   .title{
+    position: relative;
+    top: 150px;
+  
+    text-align: center;
+   
+    color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.title h2{
+    position: absolute;
+    transform: translate(-50%);
+    font-size: 40px;
+    left: 230px;
+}
+
+.title h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px orange;
+}
+
+.title h2:nth-child(2){
+    color: orange;
+    animation: animate 3s ease-in-out infinite;
+}
+
+
+   table{
+    position: relative;
+    left: 20px;
+    display: block;
+   }
+input{
+    width: 300px;
+}
+.btt{
+    position: relative;
+    left: 50px;
+
+}
+.int{
+    position: absolute;
+    left: -70px;
+    top: 200px;
+    width: 300px;
+}
+.third input{
+    width: 300px;
+
+}
+textarea{
+    position: relative;
+    top: 200px;
+    width: 300px;
+
+}
+}
+@media (min-width:900px) and (max-width:1050px) {
+    header{
+       
+    
+    }
+    
+    
+    .navbar-nav{
+       background-color: skyblue;
+    
+    }
+    
+   
+   
+    #first{
+        position: absolute;
+        top: 250px;
+        left: 20px;
+        height: 550px;
+        transform: rotateX(20deg);
+    }
+    #second{
+        position: absolute;
+        top: 300px;
+        left: 60px;
+        height: 550px;
+        transform: rotate(1deg);
+        transform: rotateX(20deg);
+    }
+    #three{
+        position: absolute;
+        top: -30px;
+        left: 600px;
+        width: 900px;
+        height: 550px;
+        transform: rotateX(20deg);
+    }
+    #first-matter{
+        position: absolute;
+        top: 50px;
+        left: 150px;
+        -webkit-animation-duration: 3.5s;
+        animation-duration: 2.5s;
+    }
+    #first-matter h5{
+        font-size: 50px;
+    }
+    #first-matter h1{
+        font-size: 50px;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    #first-matter button{
+        font-size: 20px;
+        margin-left: 230px;
+        margin-top: 40px;
+        padding: 15px;
+        border: none;
+        border-radius: 40px;
+        background-color: rgb(64, 43, 82);
+        color: white;
+    }
+    
+    @-webkit-keyframes fadeInLeft{
+        from {
+          opacity: 0.3;
+          -webkit-transform: translate3d(-300px, 0, 0);
+          transform: translate3d(-300px, 0, 0);
+        }
+      
+        to {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+    .fadeInLeft {
+        -webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+      }
+      
+    #second-matter{
+        position: absolute;
+        top: 250px;
+        left: 100px;
+    }
+    #second-matter h5{
+        font-size: 35px;
+        margin-left: 50px;
+    }
+    #second-matter h1{
+        font-size: 50px;
+        margin-left: 120px;
+        margin-top: 20px;
+    }
+    #second-matter button{
+        font-size: 20px;
+        margin-left: 270px;
+        margin-top: 40px;
+        padding: 15px;
+        border: none;
+        border-radius: 40px;
+        background-color: rgb(64, 43, 82);
+        color: white;
+    }
+    /* .nav-item a{
+        color: rgb(203, 13, 13);
+       
+    } */
+    header.sticky{
+        height: 9vh;
+        background-color: rgb(14, 174, 243);
+        padding: 5px;
+        width: 100%;
+    
+    }
+    #hotel{
+        height: 120vh;
+        width: 100%;
+        /* background-color: rgb(61, 152, 185); */
+        display: block;
+       
+    }
+    
+    .contentWrapper {
+        opacity: 0;
+        transform: translateY(50px); /* Start off-screen */
+        transition: opacity 0.5s, transform 0.5s;
+    }
+    
+    .contentWrapper.fadeIn {
+        opacity: 1;
+        transform: none; /* Bring it to its original position */
+    }
+    
+    .mainContent {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+    .about{
+        width: 600px;
+        position: relative;
+        left: 100px;
+        top: 150px;
+        font-size: large;
+        line-height: 1.7;
+       
+        
+    }
+    .img img{
+        width: 600px;
+        margin-top: 7rem;
+        margin-left: 5rem;
+        border-radius: 10px;
+    
+    }
+    #rooms{
+        background-color: white;
+        z-index: 1;
+        height: 100vh;
+        
+    }
+    #rooms button{
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .card:hover{
+        border-radius: 20px;
+        transform: scale(1.05);
+    }
+    #single{
+        margin-top: 100px;
+       height: 65vh;
+        border-radius: 20px;
+    }
+    #roo{
+        text-align: center;
+        -webkit-animation-duration: 3.5s;
+        animation-duration: 2.5s;
+    }
+    #background{
+        background-image: url(images/cute.jpg);
+        width: 100%;
+        height: 180vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: fixed;
+        top: 0px;
+        filter: blur(5px);
+        z-index: -1;
+    
+    }
+    #clients{
+        position: relative;
+        top: 300px;
+       display: flex;
+        height: 500px;
+        width: 100%;
+        /* background-color: white; */
+    }
+    
+    #cilenta{
+        position: absolute;
+        top: 50px;
+        left: 700px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    
+    }
+    #cilentb{
+        position: absolute;
+        top: 230px;
+        left: 400px;
+        border-radius: 50%;
+        width: 1000px;
+        height: 100px;
+    
+    }
+    #cilentc{
+        position: absolute;
+        top: 300px;
+        left: 670px;
+        border-radius: 50%;
+        width: 300px;
+        height: 100px;
+        font-size: xx-large;
+        
+    
+    }
+    #cilentd{
+        position: absolute;
+        top: 230px;
+        left: 1300px;
+        border-radius: 50%;
+        width: 100px;
+        height: 50px;
+        font-size: xx-large;
+        
+    
+    }
+    #cilente{
+        position: absolute;
+        top: 230px;
+        left: 140px;
+        border-radius: 30%;
+        width: 80px;
+        height: 50px;
+        font-size: xx-large;
+        
+    
+    }
+    .checked {
+        color: orange;
+      }
+    
+    #footer{
+        position: relative;
+        top: 200px;
+        
+        margin-top: 400px;
+        height: 610px;
+        width: 100%;
+        /* background-color: aqua; */
+    
+    }
+    .footer{
+       margin-left: -12px;
+        background-color: rgb(42, 38, 38);
+        height: 120px;
+        width: 100.5%;
+        display: flex;
+    
+    }
+    .footer h1{
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 100px;
+        color: whitesmoke;
+        font-family: livvic, sans-serif;
+    }
+    .footer p{
+        margin-left: 100px;
+        color: whitesmoke;
+        font-family: livvic, sans-serif;
+        margin-top: 70px;
+        float: left;
+    
+    }
+    .searchh{
+        height: 30px;
+        display: flex;
+        cursor: pointer;
+        padding: 10px;
+        background:white;
+        display: none;
+        align-items: center;
+        float: left;
+        position: relative;
+        left: 400px;
+        top: 50px;
+        /* margin-left: 350px;
+        margin-top: 35px; */
+    }
+    
+    .searchh input{
+        width: 370px;
+       padding: 20px;
+       
+        outline: none;
+        border: none;
+        font-weight: 200;
+        transition: 0.8s;
+        background: transparent;
+        
+    }
+    .searchh a button{
+        color: white;
+        font-size: 18px;
+        padding: 1px;
+        
+        
+        background-color: blue;
+        border: none;
+    
+        
+        
+    }
+    
+    .footer2{
+        background-color: rgb(42, 38, 38);
+        height: 500px;
+        width: 100.5%;
+        margin-left: -12px;
+    }
+    .footer2 h1{
+        font-family: livvic,sans-serif;
+        font-size: 25px;
+        margin-top: 100px;
+        margin-left: 100px;
+        position: absolute;
+        color: white;
+    }
+    .footer2 p{
+        color: whitesmoke;
+        font-family: livvic,sans-serif;
+        float: left;
+        margin-top: 150px;
+        margin-left: 100px;
+        line-height: 1.4;
+        font-size: 15px;
+        
+        
+        
+    }
+    .icon ul{
+        display: inline-flex;
+        margin-left: -350px;
+        margin-top: 250px;
+        float: left;
+    }
+    .icon li{
+        list-style: none;
+        margin-left: 30px;
+    }
+    .icon ul li a{
+        color: blue;
+        text-decoration: none;
+        border-radius: 10px;
+        background-color: white;
+        padding: 15px;
+    
+    }
+    .our{
+        float: left;
+    }
+    .our h1{
+        margin-left: 200px;
+        margin-top: 100px;
+        font-size: 15px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        
+    
+    }
+    .our ul{
+        position: relative;
+        top: 150px;
+        margin-left: 200px;
+        
+    }
+    .our li{
+        list-style: none;
+        margin-top: 15px;
+    }
+    .our a{
+        color: whitesmoke;
+    }
+    .our i{
+        margin-left: -30px;
+    }
+    .quick h1{
+        margin-left: 100px;
+        margin-top: 100px;
+        font-size: 15px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        
+    
+    }
+    .quick{
+        float: left;
+    }
+    .quick ul{
+        position: relative;
+        top: 150px;
+        margin-left: 100px;
+        
+    }
+    .quick li{
+        list-style: none;
+        margin-top: 15px;
+    }
+    .quick a{
+        color: whitesmoke;
+    }
+    .quick i{
+        margin-left: -30px;
+    }
+    .add{
+        float: left;
+    }
+    .add h1{
+        margin-left: 100px;
+        margin-top: 100px;
+        font-size: 15px;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+    .add h2{
+        margin-left: 100px;
+        margin-top: 160px;
+        font-size: 15px;
+        
+        color: ghostwhite;
+    }
+    .add p{
+        margin-top: 10px;
+    
+    }
+    .abb{
+        margin-top: -50px;
+    }
+    
+    
+    
+}
